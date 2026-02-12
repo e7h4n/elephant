@@ -2,6 +2,21 @@
 
 A VM0 agent that never forgets. Automatically archives all your VM0 agent run logs into `.memory/YYYY-MM-DD/<runId>.log`, organized by date.
 
+## Skill
+
+Elephant ships a built-in skill at `skill/SKILLS.md` that other agents can use to search through archived history. To add it to another agent:
+
+```yaml
+# vm0.yaml
+agents:
+  my-agent:
+    framework: claude-code
+    skills:
+      - https://github.com/e7h4n/elephant/tree/main/skill
+```
+
+This gives your agent the ability to grep through `.memory/` to look up past run logs when it needs historical context.
+
 ## Setup
 
 ### 1. Get VM0 Token

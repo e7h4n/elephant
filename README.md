@@ -4,7 +4,7 @@ A VM0 agent that never forgets. Automatically archives all your VM0 agent run lo
 
 ## Skill
 
-Elephant ships a built-in skill at `elephant/SKILLS.md` that other agents can use to search through archived history. To add it to another agent:
+Elephant ships a built-in skill at `elephant/SKILL.md` that other agents can use to search through archived history. To add it to another agent:
 
 ```yaml
 # vm0.yaml

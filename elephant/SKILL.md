@@ -1,6 +1,9 @@
-# Skills
+---
+name: elephant
+description: Search through archived agent run logs in .memory/ to recall what was done before and learn from past problem-solving approaches.
+---
 
-## Searching Past History
+# Searching Past History
 
 elephant automatically archives all past agent run logs by date into the `.memory` directory in the working directory. The structure is:
 

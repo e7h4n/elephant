@@ -27,14 +27,14 @@ vm0 compose https://github.com/e7h4n/elephant
 On first run, backfill all historical logs:
 
 ```bash
-vm0 run eternal-memory --artifact-name artifact \
+vm0 run elephant-memory --artifact-name artifact \
   "Rebuild all memory: fetch ALL runs using vm0 run ls --all --limit 100, paginate with --until to get every run. For each run, save logs to .memory/YYYY-MM-DD/<runId>.log. Skip runs that already have a log file."
 ```
 
 ### 4. Schedule Daily Archival
 
 ```bash
-vm0 schedule setup eternal-memory \
+vm0 schedule setup elephant-memory \
   -f daily \
   -t 00:00 \
   -z <your-timezone> \
@@ -43,4 +43,4 @@ vm0 schedule setup eternal-memory \
   -e
 ```
 
-Find your IANA timezone [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) (e.g. `Asia/Shanghai`, `America/New_York`, `Europe/London`).
+Find your IANA timezone [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) (e.g. `America/New_York`, `Europe/London`).

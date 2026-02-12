@@ -1,0 +1,10 @@
+version: "1.0"
+
+agents:
+  eternal-memory:
+    framework: claude-code
+    skills:
+      - https://github.com/vm0-ai/vm0-skills/tree/main/vm0-cli
+    environment:
+      VM0_TOKEN: ${{ secrets.VM0_TOKEN }}
+    instructions: AGENTS.md
